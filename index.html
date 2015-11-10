@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<h2>This page loads my-es6-module.js using systemjs</h2>
+	<script src="node_modules/systemjs/dist/system.js"></script>
+	<script>
+		System.import('my-es6-module.js').then(function (m) {
+			m.default();
+		});
+	</script>
+</body>
+
+</html>
