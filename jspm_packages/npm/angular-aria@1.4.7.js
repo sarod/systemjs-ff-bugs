@@ -1,0 +1,1 @@
+module.exports = require("npm:angular-aria@1.4.7/index");

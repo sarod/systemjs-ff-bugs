@@ -2,19 +2,27 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Angular JS / Typescript/ JSPM experiments</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- semarchy js -->
+    <base href=".">
+
+    <script src="jspm_packages/system.src.js"></script>
+    <script src="config.js"></script>
+     <script>
+        System.import('app-bootstrap');
+    </script>
 </head>
 
 <body>
-	<h2>This page loads my-es6-module.js using systemjs</h2>
-	<script src="node_modules/systemjs/dist/system.js"></script>
-	<script>
-		System.import('my-es6-module.js').then(function (m) {
-			m.default();
-		});
-	</script>
+    <my-app ></my-app>
 </body>
-
 </html>
